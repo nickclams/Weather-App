@@ -20,7 +20,7 @@ function grabMyData(data) {
   console.log("isDaytime = " + isDaytime)
 
   for (let i = 0; i < forecastArray.length; i++) {
-    const random = getRandomNumber(1, 3)
+    let random = getRandomNumber(1, 3)
     if (forecastArray[i] == "Snow") {
       if (isDaytime == true) {
         $("body").css("background-image", "url(./assets/snow-daytime" + random + ".jpg)")
