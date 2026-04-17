@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(./assets/Montserrat.ttf);
+  font-weight: 300;
+}
+
+#temperature {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-size: 5rem;
+}
+
+#forecast {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+#weather {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 1rem;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  box-shadow: 0 0 2rem black;
+  background: rgb(64, 64, 64, 0.5);
+  border: 0.125rem solid rgb(128, 128, 128, 0.5);
+  border-radius: 0.5rem;
+}
+
+#film-title {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding-bottom: 0;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  color: white;
+  box-shadow: 0 0 2rem black;
+  background: rgb(64, 64, 64, 0.5);
+  border: 0.125rem solid rgb(128, 128, 128, 0.5);
+  border-radius: 0.5rem;
+}
+
+#film-title:hover {
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  opacity: 75%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 98vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1024px) {
+  #forecast {
+    font-size: 2.8rem;
+  }
+
+  #temperature {
+    font-size: 7rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #forecast {
+    font-size: 2.4rem;
+  }
+
+  #temperature {
+    font-size: 6rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  body {
+    min-height: 85vh;
+  }
+
+  h4 {
+    font-size: 10rem;
+  }
+}
